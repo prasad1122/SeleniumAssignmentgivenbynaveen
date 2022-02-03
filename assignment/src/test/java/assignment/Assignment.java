@@ -23,13 +23,9 @@ public class Assignment {
 	public void open() throws InterruptedException
 	{
 		driver.get("https://www.saucedemo.com/");
-		Thread.sleep(600);
 		driver.findElement(By.xpath("//input[@id='user-name']")).sendKeys("standard_user");
-		Thread.sleep(600);
 		driver.findElement(By.xpath("(//input[@id='password'])[1]")).sendKeys("secret_sauce");
-		Thread.sleep(600);
 		driver.findElement(By.xpath("//input[@id='login-button']")).click();
-		Thread.sleep(600);
 		List<Double> all_elements_text=new ArrayList<Double>();
 		List<WebElement> myList = driver.findElements(By.xpath("//div[@class='inventory_item_price']"));
 		
@@ -50,9 +46,9 @@ public class Assignment {
 		}
 		
 		List<WebElement> addtocart = driver.findElements(By.xpath("//button[@class='btn btn_primary btn_small btn_inventory']"));
-		Thread.sleep(6000);
+		
 			addtocart.get(indexvalue).click();
-			Thread.sleep(6000);
+			
 		}
 		
 	@BeforeTest
