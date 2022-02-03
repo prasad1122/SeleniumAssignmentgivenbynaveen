@@ -20,7 +20,6 @@ public class Assignment {
 	int indexvalue;
 	
 	@Test
-	
 	public void open() throws InterruptedException
 	{
 		driver.get("https://www.saucedemo.com/");
@@ -66,12 +65,12 @@ public class Assignment {
 	}
 	
 	
-	  @AfterTest public void quit()
+	  @AfterTest
+	  public void quit()
 	  {
 		  driver.quit();
 	  
 	  }
 	 
-			
-
+	
 }
